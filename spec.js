@@ -1,7 +1,8 @@
 var request = require("supertest"),
     cfenv = require("cfenv");
 
-var url = "http://node-app-0502.stage1.mybluemix.net";
+var appName = process.env.IDS_PROJECT_NAME;
+var url = "http://" + appName + ".stage1.mybluemix.net";
 
 console.log("Request url: " + url);
 
