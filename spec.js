@@ -6,10 +6,6 @@ var url = "http://" + appName + ".stage1.mybluemix.net";
 
 console.log("Request url: " + url);
 
-console.log(process.env);
-
-console.log(cfenv.getAppEnv());
-
 request = request(url);
 
 describe("GET /", function () {
